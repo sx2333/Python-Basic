@@ -3,10 +3,23 @@ ex3
   结果：
   
 2.print("Is it greater?", 5 > -2)
-  注意这个语法
+  注意语法
   
 ex4
 1.cars = 100
-  print("There are", cars, "cars available.")
-  首先注意连接变量用的符号，其次换一种表达方式，注意"+"连接变量好像没有用，想想原因
+  
+2.print("There are", cars, "cars available.")
+  首先注意连接变量用的符号，其次换一种表达方式，注意"+"连接变量好像没有用，想想原因.
 
+ex5
+1.my_name = zz
+ print(f"my name is {my_name}.")
+ 注意f"{}"的用法
+
+2.round()
+  函数作用：
+
+ex6
+1.types_of_people = 10
+  x = f"There are {types_of_people} types of people."
+  注意语法
