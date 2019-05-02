@@ -23,3 +23,87 @@ ex6
 1.types_of_people = 10
   x = f"There are {types_of_people} types of people."
   注意语法
+
+2.hilarious = "False"
+  joke_evaluation = "Isn't that joke so funny?! {}"
+  print(joke_evaluation.format)
+  注意语法，结果：
+  是否可以二三局合并，注意和ex7对比
+
+ex7
+  1.print("It's fleece wsa white as {}.".format('snow'))
+    注意语法，同ex6对比
+  
+  2.end = ''
+    注意作用
+
+ex8
+  formatter = "{} {} {} {}"
+  print(formatter.format(1,2,3,4))
+  print(formatter.format("one","two","There","four"))
+
+ex9
+  print("""
+  1
+  2
+  3
+  """)
+  在python中 三引号不用换行符直接可换行
+
+ex10
+  print('I am 6\'2" tall.')
+  print("I am 6'2\" tall.")
+  注意结果
+
+ex11
+  想想当时x = int(intput())为什么错了，而x = int(float(intput()))
+
+ex12 
+  age = intput("How old are you")
+  注意用法
+
+ex13
+  1.from sys import argv
+    script, first, second, third = argv
+    导入argv(argument variable),即所谓的参数变量，这个变量保存着你传递给python脚本的参数
+    第二行则是将argv解包，将值赋给四个变量
+  
+  2.注意argv和input用法的不同
+
+ex 15
+  txt = open(filename)
+  print(txt.read())
+  注意打印出一个文件内容的流程
+
+ex16
+  1.txt = open(filename, 'w')
+    使文件进入读写模式
+    同ex15对比
+  
+  2.txt.truncate()
+    将文件清空
+  
+  3.txt.write('')
+    写入字符
+
+ex17
+  1.from os.path import exists
+    这里导入一个实用的命令exists(),文件存在返回ture,不存在返回false
+  
+  2.注意open()命令打开的文件要用close()命令关闭
+
+  3.len()
+    注意作用
+
+ex18
+  def print_two(*args)中*的作用
+  功能是告诉python把函数的所用参数都接收进来,放到名叫args的列表中去
+
+ex20
+  1.def rewind(f)
+        f.seek(0)
+    seek(0)是将光标转到文件0字节的位置
+
+  2.+=是什么?
+    举个简单的列子 x += y和x = x + y是一样的意思
+ 
