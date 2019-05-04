@@ -1,6 +1,6 @@
 print("let's practise everything.")
-print('You\'d need to know \'about escapes with \\ that do:')
-print('\n newlines and \t tabs.')
+print('You\'d need to know \'about escapes with \\ that do:') # '\' 转意字符
+print('\n newlines and \t tabs.')  # '\n'换行  '\t' ascii水平制表符
 
 poem = """
 \tThe lovely world
@@ -35,6 +35,9 @@ print("with a starting point of: {}".format(start_point))
 print(f"We'd have {beans}, {jars}jars, and{crates} crates.")
 
 start_point = start_point / 10
+
 print("We could also do that this way:")
 formula = secret_formula(start_point)
+# this is an easy way to apply a list to a format string
+print("We'd have {} beans, {}ars, and {} creates.".format(*formula))
 
